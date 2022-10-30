@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>main.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #6a8759;}
+.s2 { color: #6897bb;}
+.s3 { color: #cc7832;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.py</font>
+</center></td></tr></table>
+<pre><span class="s0">per_cent = {</span><span class="s1">'ТКБ'</span><span class="s0">: </span><span class="s2">5.6</span><span class="s3">, </span><span class="s1">'СКБ'</span><span class="s0">: </span><span class="s2">5.9</span><span class="s3">, </span><span class="s1">'ВТБ'</span><span class="s0">: </span><span class="s2">4.28</span><span class="s3">, </span><span class="s1">'СБЕР'</span><span class="s0">: </span><span class="s2">4.0</span><span class="s0">}</span>
+<span class="s0">money = (int(input(</span><span class="s1">'Введите сумму: '</span><span class="s0">)))</span>
+<span class="s0">new_list = []</span>
+<span class="s3">for </span><span class="s0">value </span><span class="s3">in </span><span class="s0">per_cent.values():</span>
+    <span class="s0">deposit = int((money * value) / </span><span class="s2">100</span><span class="s0">)</span>
+    <span class="s0">new_list.append(deposit)</span>
+<span class="s0">print(</span><span class="s1">f'Список новых значений </span><span class="s3">{</span><span class="s0">new_list</span><span class="s3">}</span><span class="s1">'</span><span class="s0">)</span>
+<span class="s0">print(</span><span class="s1">f'Максимальное значение </span><span class="s3">{</span><span class="s0">max(new_list)</span><span class="s3">}</span><span class="s1">'</span><span class="s0">)</span>
+</pre>
+</body>
+</html>
